@@ -1,0 +1,50 @@
+
+//Count Digits
+
+import java.util.Arrays;
+
+public class CountDigits {
+
+    public static void main(String[] args){
+
+        System.out.println("Count digits machine "+"\n");
+
+        Integer digitInput1 = 12345;
+        Integer digitInput2 = 100;
+
+
+
+
+
+
+
+        System.out.println("The the number of digits of "+digitInput1+" = "+reverseDigit(digitInput1)+" digits "+"\n");
+        System.out.println("The the number of digits of "+digitInput2+" = "+reverseDigit(digitInput2)+" digits "+"\n");
+
+
+
+    }
+
+    public static Integer reverseDigit(Integer digitCount){
+
+        if(digitCount < 0){
+
+            System.out.println("Please enter non-negative integer"+"\n");
+
+            return digitCount;
+        }
+
+        if(digitCount < 10){
+
+            return 1;
+        }
+
+
+
+        return 1 + reverseDigit(digitCount/10);
+
+
+    }
+
+
+}
