@@ -15,9 +15,6 @@ public class CountDigits {
 
 
 
-
-
-
         System.out.println("The the number of digits of "+digitInput1+" = "+reverseDigit(digitInput1)+" digits "+"\n"+" and for the second input "+digitInput2+" ="+reverseDigit(digitInput2)+);
       
 
